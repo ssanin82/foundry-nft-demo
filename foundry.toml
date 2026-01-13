@@ -2,7 +2,10 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-remappings = ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts']
+remappings = [
+    '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
+    'foundry-devops/=/home/ubuntu/dev/foundry-nft-demo/lib/foundry-devops'
+]
 fs_permissions = [
     { access = "read", path = "./images/" },
     { access = "read", path = "./broadcast" },
