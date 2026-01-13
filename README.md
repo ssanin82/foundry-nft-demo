@@ -1,66 +1,17 @@
-## Foundry
+# Meowthic NFT
+![Screenshot](cats.png)
+I am a little bit late to play around with NFT, but as I was always curious about going through the wholew process of creating NFT from scratch. Here is my MEOWTHIC NFT.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+## Deploying to Anvil
+To play aroud:
 ```
-
-### Test
-
-```shell
-$ forge test
+forge install
+<run anvil in a separate terminal>
+forge deploy
+forge mint
 ```
+`Interactions.s.sol` script will deploy all 6 puking cats to Anvil.
+Just import the first test wallet from Anvil, add Anvil to Metamask, and then you can import these NFTs one by one. Their ids are 0, 1, 2, 3, 4, 5 respectively.
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Not sure why I did this. I guess, for fun only. Here is the result in my Metamask:
+![Screenshot](image.png)
